@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing responsiva inspirada en mockup eTicket para Conspiradores de Querétaro." />
+  <title>Conspiradores Querétaro | eTicket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Inicio eTicket Deportes">
+        <span class="brand__mark">e</span>
+        <span class="brand__text">
+          <strong>ticket</strong>
+          <small>a ticketmaster company</small>
+        </span>
+      </a>
+
+      <form class="topbar__search" role="search">
+        <input type="search" placeholder="Buscar artistas y/o eventos" aria-label="Buscar artistas y eventos" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <a class="topbar__login" href="#">Iniciar sesión</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <img class="hero__logo" src="assets/conspiradores-logo.png" alt="Conspiradores Querétaro" />
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro__shape intro__shape--left"></div>
+      <div class="intro__shape intro__shape--right"></div>
+      <div class="container intro__inner">
+        <div class="intro__player-wrap">
+          <img class="intro__player" src="assets/player.png" alt="Jugador de Conspiradores con bat" />
+        </div>
+
+        <div class="intro__copy">
+          <h1>Vive la experiencia</h1>
+          <div class="rule"></div>
+          <p>
+            Consulta fechas, adquiere boletos, revisa zonas disponibles y prepara tu visita
+            para disfrutar una experiencia completa con tu familia y amigos.
+          </p>
+          <div class="intro__actions">
+            <a class="btn btn--primary" href="#promociones">Comprar boletos</a>
+            <a class="btn btn--dark" href="#juegos">Ver calendario</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="games" id="juegos">
+      <div class="games__blob games__blob--left"></div>
+      <div class="games__blob games__blob--right"></div>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <h2>Siguientes juegos</h2>
+          <div class="rule rule--purple"></div>
+        </div>
+
+        <div class="carousel" aria-label="Carrusel de próximos juegos">
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Juego anterior">
+            <span></span>
+          </button>
+
+          <div class="carousel__viewport" id="gamesViewport">
+            <div class="carousel__track">
+              <article class="game-card game-card--faded">
+                <img src="assets/game1.png" alt="Próximo juego" />
+              </article>
+
+              <article class="game-card">
+                <img src="assets/game1.png" alt="Vs. El Águila de Veracruz" />
+              </article>
+
+              <article class="game-card">
+                <img src="assets/game2.png" alt="Vs. Pericos de Puebla" />
+              </article>
+
+              <article class="game-card game-card--faded">
+                <img src="assets/game1.png" alt="Juego adicional" />
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente juego">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="promos" id="promociones">
+      <div class="promos__blob promos__blob--left"></div>
+      <div class="promos__blob promos__blob--right"></div>
+      <div class="container promos__inner">
+        <div class="section-head section-head--left">
+          <h2>Promociones</h2>
+          <div class="rule rule--purple"></div>
+        </div>
+
+        <div class="promos__grid">
+          <article class="promo-card">
+            <img src="assets/promo1.png" alt="Martes de estudiantes y maestros" />
+          </article>
+          <article class="promo-card">
+            <img src="assets/promo2.png" alt="Miércoles de mujeres" />
+          </article>
+          <article class="promo-card">
+            <img src="assets/promo3.png" alt="Jueves Godín" />
+          </article>
+        </div>
+
+        <div class="promos__cta">
+          <a class="btn btn--primary" href="#footer-links">Ver más promociones</a>
+        </div>
+
+        <img class="promos__mascot" src="assets/mascot.png" alt="Mascota de Conspiradores" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__container">
+      <div class="footer__menus">
+        <nav class="footer__nav" aria-label="Menú principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#">Conciertos</a>
+          <a href="#">Deportes</a>
+          <a href="#">Teatro</a>
+          <a href="#">Culturales</a>
+          <a href="#">Comedia</a>
+          <a href="#">Familiares</a>
+          <a href="#">Congresos</a>
+          <a href="#">Festivales</a>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Ayuda y enlaces">
+          <a href="#">¡Recoge tus boletos!</a>
+          <a href="#">Ubicación de puntos de venta</a>
+          <a href="#">Suscríbete al boletín</a>
+          <a href="#">Promociones</a>
+          <a href="#">Vende tus boletos en eticket</a>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Comunicados</a>
+          <a href="#">Contáctanos</a>
+          <a href="#">Políticas de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </nav>
+      </div>
+
+      <div class="footer__support">
+        <div class="support-card">
+          <div class="support-card__title">Centro de atención telefónica</div>
+          <div class="support-card__body">
+            <p><strong>Tel:</strong> 442 000 0000</p>
+            <p><strong>Horario:</strong> Lun a Vie · 9:00 a 18:00</p>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+
+        <p class="footer__tagline">La vida está llena de experiencias. <span>#experienciaeticket</span></p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        © 2026 :: eticket :: Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
